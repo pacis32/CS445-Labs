@@ -1,1 +1,0 @@
-console.log("salut comment vous allez?");
