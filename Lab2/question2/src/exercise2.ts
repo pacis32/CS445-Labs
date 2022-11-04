@@ -7,6 +7,7 @@ let bankAccount:{
 		this.money += value; 
 	} 
 }; 
+
 let myself: {
 name:string,
 bankAccount:typeof bankAccount,
