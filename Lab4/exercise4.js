@@ -13,17 +13,20 @@ const mimoize =(fn) => {
 }
 function fibonacci(n) {
     if (n <= 1) {
-        return n;
+        return 1;
     }
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-const fastFunc= mimoize(fibonacci);
-console.time()
-console.log(fibonacci(5));
-console.timeEnd();
+
 
 console.log("..........")
 console.time()
-console.log(fastFunc(5));
+console.log(fibonacci(5));
 console.timeEnd()
+
+
+const fastFunc= mimoize(fibonacci);
+console.time()
+console.log("fast",fastFunc(5));
+console.timeEnd();
