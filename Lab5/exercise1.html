@@ -20,10 +20,13 @@
     
     function swapPic(){
       
-   img1=document.getElementById('pic1');
-   img1SRC=img1.src;
+   img1=document.getElementById('pic1');  
    img2=document.getElementById('pic2');
    img1SRC=img1.src;
+   img2SRC=img2.src;
+   img1.src=img2SRC;
+   img2.src= img1SRC;
+   
 
     
     
