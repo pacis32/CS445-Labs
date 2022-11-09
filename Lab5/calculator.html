@@ -8,17 +8,18 @@
 </head>
 <body>
     <div>
-        <input id=" inp1" type="number">
-        <input id=" inp2"type="number">
+        <input  type="number" id="num1Id">
+        <input type="number" id="num2Id">
        <input  id="rs" type="text">
         <input type="submit" onclick="add()">
     </div>
 
     <script>
     function add(){
-        let num1= document.getElementById('inp1');
-        let num2= document.getElementById('inp2');
-        document.getElementById("rs").innerHTML= num1.value +num2.value;
+        let num1=Number (document.getElementById("num1Id").value);
+        let num2= Number(document.getElementById("num2Id").value);
+        let num3=document.getElementById("rs")
+       num3.value=String (num1 +num2);
     }
     </script>
 </body>
