@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <div>
+        <input id=" inp1" type="number">
+        <input id=" inp2"type="number">
+       <input  id="rs" type="text">
+        <input type="submit" onclick="add()">
+    </div>
+
+    <script>
+    function add(){
+        let num1= document.getElementById('inp1');
+        let num2= document.getElementById('inp2');
+        document.getElementById("rs").innerHTML= num1.value +num2.value;
+    }
+    </script>
+</body>
+</html>
