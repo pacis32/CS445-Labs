@@ -11,14 +11,17 @@
     <div >
         <img id="pic1" style="height: 100px; width: 100px;" src="/Lab5/image1.jpeg" alt="">
     </div>
-    <div >
+    <div>
+    <button id="btn">Swap</button>
+    </div>
+    <div>
         <img id="pic2" style="height: 100px; width: 100px;" src="/Lab5/image2.jpeg" alt="">
     </div>
-    <button onclick="swapPic()">Swap</button>
+    
 </div>
 <script>
     
-    function swapPic(){
+    function swap(){
       
    img1=document.getElementById('pic1');  
    img2=document.getElementById('pic2');
@@ -26,9 +29,11 @@
    img2SRC=img2.src;
    img1.src=img2SRC;
    img2.src= img1SRC;
-   
     
     }
+
+document.getElementById('btn').addEventListener('click',swap)
+
 </script>
 </head>
 </body>

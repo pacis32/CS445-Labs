@@ -11,16 +11,18 @@
         <input  type="number" id="num1Id">
         <input type="number" id="num2Id">
        <input  id="rs" type="text">
-        <input type="submit" onclick="add()">
+        <input id="sb" type="submit" >
     </div>
 
     <script>
     function add(){
-        let num1=Number (document.getElementById("num1Id").value);
-        let num2= Number(document.getElementById("num2Id").value);
+        let num1=parseInt(document.getElementById("num1Id").value);
+        let num2= parseInt(document.getElementById("num2Id").value);
         let num3=document.getElementById("rs")
        num3.value=String (num1 +num2);
     }
+    let btn=document.getElementById("sb");
+    btn.addEventListener('click',add)
     </script>
 </body>
 </html>
