@@ -15,7 +15,7 @@
 }
 
 console.log('start');
-isPrime(13)
+isPrime(7)
     .then(res => console.log(res))
     .catch(err => console.error(err));
 console.log('end');
