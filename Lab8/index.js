@@ -29,7 +29,11 @@ async function getInfo(){
         let div = document.createElement('div');
         div.innerHTML = template; 
         div.classList = 'row'; 
+       
         empDiv.appendChild(div);
     }
+
+    
+
 }
 
